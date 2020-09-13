@@ -23,6 +23,10 @@
                                 <rect key="frame" x="16" y="427" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="album"/>
+                                <connections>
+                                    <action selector="openAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Np2-iM-Pdt"/>
+                                    <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="op5-q4-ELA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LA-b6-kpN">
                                 <rect key="frame" x="176" y="427" width="128" height="128"/>
