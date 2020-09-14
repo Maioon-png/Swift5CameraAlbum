@@ -10,6 +10,7 @@ import UIKit
 //カメラを使ってもいいかユーザーに確認
 import Photos
 
+//UIImagePickerControllerDelegateとUINavigationControllerDelegateを追加
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var backImageView: UIImageView!
@@ -18,10 +19,9 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
         super.viewDidLoad()
         
+        //許可
         PHPhotoLibrary.requestAuthorization { (status) in
             switch(status){
-                
-                
             case .notDetermined:
                 print("notDetermined")
             case .restricted:
