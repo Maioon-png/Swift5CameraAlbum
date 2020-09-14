@@ -18,20 +18,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
         super.viewDidLoad()
         
-        PHPhotoLibrary.requestAuthorization { (status) in
-            switch(status){
-                
-                
-            case .notDetermined:
-                print("notDetermined")
-            case .restricted:
-                print("restricted")
-            case .denied:
-                print("許可されていません。")
-            case .authorized:
-                print("許可されています。")
-            }
-        }
+
         
     }
     //カメラボタン
